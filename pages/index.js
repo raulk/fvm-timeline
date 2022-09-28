@@ -5,7 +5,7 @@ import { zeroPad } from 'react-countdown';
 import moment from 'moment';
 
 const deadlines = [
-  { milestone: "End of developement", date: "2022-11-08", colors: "bg-amber-600 text-amber-100 hover:bg-amber-700" },
+  { milestone: "End of development", date: "2022-11-08", colors: "bg-amber-600 text-amber-100 hover:bg-amber-700" },
   { milestone: "Lisbon events kickoff", date: "2022-10-24", colors: "bg-pink-600 text-pink-100 hover:bg-pink-700" },
   { milestone: "Audits kickoff", date: "2022-11-14", colors: "bg-red-600 text-red-100 hover:bg-red-700" },
   { milestone: "Butterfly launch", date: "2022-11-14", colors: "bg-violet-600 text-violet-100 hover:bg-violet-700" },
