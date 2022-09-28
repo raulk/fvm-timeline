@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>FVM M2.1 launch milestones</title>
+        <title>FVM M2.1 launch timeline</title>
         <meta name="description" content="FVM M2.1 launch timeline" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
