@@ -11,6 +11,7 @@
 
 .entry {
   @apply w-full;
+  @apply transition-colors;
   @apply flex flex-grow flex-row;
   @apply content-center justify-center place-content-stretch;
   @apply pr-1;
