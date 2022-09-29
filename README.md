@@ -18,6 +18,30 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Build
+
+You have two options when it comes to building your project.
+
+### Using Node.js
+
+Next.js assumes you want to deploy your project onto a site with Node.js installed. If this is the case, run `npm run build` to build your site:
+
+```shell
+npm run build
+```
+
+This command will output your project into the `.next` directory. You can find out [more information on Deployment at the Next.js docs site](https://nextjs.org/docs/deployment).
+
+### Static site
+
+If you want a static site that you can host anywhere, use `npm run build-static`:
+
+```shell
+npm run build-static
+```
+
+This command will output your project to the `out` folder. You can move this folder to a static site hosting service such as Fleek or Netlify.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
