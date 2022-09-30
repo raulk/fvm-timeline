@@ -46,7 +46,7 @@ export default function Home() {
             <div className={styles.right}>
               <Countdown date={x.date} className={styles.timer} renderer={renderer} />
               <div className={styles.relativeTime}>
-                {moment(x.date, "YYYY-MM-DD").fromNow()}
+                ～ {moment(x.date, "YYYY-MM-DD").fromNow()}
               </div>
             </div>
           </article>)}
