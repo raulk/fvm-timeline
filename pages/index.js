@@ -1,18 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Countdown from 'react-countdown';
 import { zeroPad } from 'react-countdown';
+import dynamic from 'next/dynamic'
 import moment from 'moment';
 
-import '@fontsource/inconsolata';
-import '@fontsource/inconsolata/200.css';
-import '@fontsource/inconsolata/300.css';
-import '@fontsource/inconsolata/400.css';
-import '@fontsource/inconsolata/500.css';
-import '@fontsource/inconsolata/600.css';
-import '@fontsource/inconsolata/700.css';
-import '@fontsource/inconsolata/800.css';
-import '@fontsource/inconsolata/900.css';
+const Countdown = dynamic(() => import('react-countdown'), {
+  ssr: false
+})
 
 const deadlines = [
   { milestone: "End of development", date: "2022-11-08", colors: "bg-amber-600 text-amber-100 hover:bg-amber-700" },
@@ -42,7 +36,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.title}>FVM M2.1 launch timeline</div>
         {deadlines.sort(sortBy("date")).map(x =>
-          <article key={styles.name} className={`${styles.entry} ${x.colors}`}>
+          <article key={x.milestone} className={`${styles.entry} ${x.colors}`}>
             <div className={styles.left}>
               <div className={styles.name}><span className={styles.nameInner}>{x.milestone}</span></div>
               <div className={styles.due}>

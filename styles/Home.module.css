@@ -24,7 +24,7 @@
   @apply lg:pr-4;
   @apply lg:text-4xl;
   @apply xl:pr-7;
-  @apply xl:text-6xl;
+  @apply xl:text-5xl;
 }
 
 .right {
@@ -36,7 +36,7 @@
 }
 
 .name {
-  @apply lg:py-3;
+  @apply lg:py-2;
 }
 
 .nameInner {
@@ -47,21 +47,21 @@
 
 .timer {
   @apply text-lg;
-  @apply lg:py-3;
+  @apply lg:py-2;
   @apply lg:text-4xl;
-  @apply xl:text-6xl;
+  @apply xl:text-5xl;
 }
 
 .due {
   @apply text-base italic font-light;
   @apply lg:text-2xl;
-  @apply xl:text-4xl;
+  @apply xl:text-3xl;
 }
 
 .relativeTime {
   @apply text-base font-bold;
   @apply lg:text-2xl;
-  @apply xl:text-4xl;
+  @apply xl:text-3xl;
 }
 
 .main {
