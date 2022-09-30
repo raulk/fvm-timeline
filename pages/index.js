@@ -9,13 +9,13 @@ const Countdown = dynamic(() => import('react-countdown'), {
 })
 
 const deadlines = [
-  { milestone: "End of development", date: "2022-11-08", colors: "bg-amber-600 text-amber-100 hover:bg-amber-700" },
-  { milestone: "Lisbon events kickoff", date: "2022-10-24", colors: "bg-pink-600 text-pink-100 hover:bg-pink-700" },
-  { milestone: "Audits kickoff", date: "2022-11-14", colors: "bg-red-600 text-red-100 hover:bg-red-700" },
-  { milestone: "Butterfly launch", date: "2022-11-14", colors: "bg-violet-600 text-violet-100 hover:bg-violet-700" },
-  { milestone: "Buildernet launch", date: "2022-11-28", colors: "bg-sky-600 text-sky-100 hover:bg-sky-700" },
-  { milestone: "Calibrationnet launch", date: "2023-01-09", colors: "bg-lime-600 text-lime-100 hover:bg-lime-700" },
-  { milestone: "Mainnet", date: "2023-02-08", colors: "bg-green-600 text-green-100 hover:bg-green-700" },
+  { milestone: "End of development", date: "2022-11-08", colors: "bg-slate-800 text-slate-100 hover:text-amber-100 hover:bg-amber-600", c: "bg-amber-600/50" },
+  { milestone: "Lisbon events kickoff", date: "2022-10-24", colors: "bg-slate-800 text-slate-100 hover:text-pink-100 hover:bg-pink-600", c: "bg-pink-600/50" },
+  { milestone: "Audits kickoff", date: "2022-11-14", colors: "bg-slate-800 text-slate-100 hover:text-red-100 hover:bg-red-600", c: "bg-red-600/50" },
+  { milestone: "Butterfly launch", date: "2022-11-14", colors: "bg-slate-800 text-slate-100 hover:text-violet-100 hover:bg-violet-600", c: "bg-violet-600/50" },
+  { milestone: "Buildernet launch", date: "2022-11-28", colors: "bg-slate-800 text-slate-100 hover:text-sky-100 hover:bg-sky-600", c: "bg-sky-600/50" },
+  { milestone: "Calibrationnet launch", date: "2023-01-09", colors: "bg-slate-800 text-slate-100 hover:text-lime-100 hover:bg-lime-600", c: "bg-lime-600/50" },
+  { milestone: "Mainnet", date: "2023-02-08", colors: "bg-slate-800 text-slate-100 hover:text-green-100 hover:bg-green-600", c: "bg-green-600/50" },
 ];
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => <span className={styles.timer}>{completed ? "🎉" : `${days}d ${hours}h ${minutes}m ${zeroPad(seconds)}s`}</span>
@@ -36,9 +36,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.title}>FVM M2.1 launch timeline</div>
         {deadlines.sort(sortBy("date")).map(x =>
-          <article key={x.milestone} className={`${styles.entry} ${x.colors}`}>
+          <article key={x.milestone} className={`${styles.entry} ${x.colors} group`}>
             <div className={styles.left}>
-              <div className={styles.name}><span className={styles.nameInner}>{x.milestone}</span></div>
+              <div className={styles.name}><span className={`${styles.nameInner} ${x.c} group-hover:bg-zinc-800/30`}>{x.milestone}</span></div>
               <div className={styles.due}>
                 <span className='text-'>due </span> {x.date}
               </div>

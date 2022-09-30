@@ -40,12 +40,14 @@
 }
 
 .nameInner {
-  @apply px-2;
+  @apply px-2 py-1;
+  @apply transition-colors;
   @apply lg:px-4;
-  @apply bg-zinc-800/30;
+  @apply group-hover:bg-zinc-800/100;
 }
 
 .timer {
+  @apply font-semibold;
   @apply text-lg;
   @apply lg:py-2;
   @apply lg:text-4xl;
@@ -59,7 +61,7 @@
 }
 
 .relativeTime {
-  @apply text-base font-bold;
+  @apply text-base;
   @apply lg:text-2xl;
   @apply xl:text-3xl;
 }
