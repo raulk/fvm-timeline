@@ -5,7 +5,6 @@ import { zeroPad } from 'react-countdown';
 import moment from 'moment';
 
 import '@fontsource/inconsolata';
-import '@fontsource/inconsolata/100.css';
 import '@fontsource/inconsolata/200.css';
 import '@fontsource/inconsolata/300.css';
 import '@fontsource/inconsolata/400.css';
@@ -13,6 +12,7 @@ import '@fontsource/inconsolata/500.css';
 import '@fontsource/inconsolata/600.css';
 import '@fontsource/inconsolata/700.css';
 import '@fontsource/inconsolata/800.css';
+import '@fontsource/inconsolata/900.css';
 
 const deadlines = [
   { milestone: "End of development", date: "2022-11-08", colors: "bg-amber-600 text-amber-100 hover:bg-amber-700" },
