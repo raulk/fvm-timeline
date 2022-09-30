@@ -23,7 +23,7 @@
   @apply font-semibold text-lg text-right;
   @apply lg:pr-4;
   @apply lg:text-4xl;
-  @apply xl:pr-6;
+  @apply xl:pr-5;
   @apply xl:text-5xl;
 }
 
@@ -32,7 +32,7 @@
   @apply content-center justify-center;
   @apply w-1/2 pl-3;
   @apply lg:pl-4;
-  @apply xl:pl-6;
+  @apply xl:pl-5;
 }
 
 .name {
