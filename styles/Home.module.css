@@ -1,7 +1,7 @@
 .container {
   @apply flex flex-col;
   @apply mx-auto;
-  font-family: 'Inconsolata', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Inconsolata';
 }
 
 .title {
