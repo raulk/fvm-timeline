@@ -1,7 +1,7 @@
 .container {
   @apply flex flex-col;
   @apply mx-auto;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
 }
 
 .title {
