@@ -12,7 +12,7 @@ const deadlines = [
   { milestone: "End of development", date: "2022-12-06", colors: "bg-slate-800 text-slate-100 hover:text-amber-100 hover:bg-amber-600", c: "bg-amber-600/50" },
   { milestone: "Lisbon events kickoff", date: "2022-10-24", colors: "bg-slate-800 text-slate-100 hover:text-pink-100 hover:bg-pink-600", c: "bg-pink-600/50" },
   { milestone: "Audits kickoff", date: "2022-11-22", colors: "bg-slate-800 text-slate-100 hover:text-red-100 hover:bg-red-600", c: "bg-red-600/50" },
-  { milestone: "X testnet launch (former Buildernet, name pending)", date: "2022-12-06", colors: "bg-slate-800 text-slate-100 hover:text-sky-100 hover:bg-sky-600", c: "bg-sky-600/50" },
+  { milestone: "Stable testnet + Acceleration", date: "2022-12-06", colors: "bg-slate-800 text-slate-100 hover:text-sky-100 hover:bg-sky-600", c: "bg-sky-600/50" },
   { milestone: "Calibrationnet launch", date: "2023-01-09", colors: "bg-slate-800 text-slate-100 hover:text-lime-100 hover:bg-lime-600", c: "bg-lime-600/50" },
   { milestone: "Mainnet", date: "2023-02-08", colors: "bg-slate-800 text-slate-100 hover:text-green-100 hover:bg-green-600", c: "bg-green-600/50" },
 ];
