@@ -28,12 +28,12 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>FVM M2.1 (FEVM) launch timeline</title>
-        <meta name="description" content="FVM M2.1 launch timeline" />
+        <meta name="description" content="FVM M2.1 (FEVM) launch timeline" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>FVM M2.1 launch timeline</div>
+        <div className={styles.title}>FVM M2.1 (FEVM) launch timeline</div>
         {deadlines.sort(sortBy("date")).map(x =>
           <article key={x.milestone} className={`${styles.entry} ${x.colors} group`}>
             <div className={styles.left}>
