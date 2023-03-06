@@ -14,7 +14,7 @@ const deadlines = [
   { milestone: "Audits kickoff", date: "2022-11-22", colors: "bg-slate-800 text-slate-100 hover:text-red-100 hover:bg-red-600", c: "bg-red-600/50" },
   { milestone: "Hyperspace testnet", date: "2023-01-20", colors: "bg-slate-800 text-slate-100 hover:text-sky-100 hover:bg-sky-600", c: "bg-sky-600/50" },
   { milestone: "Calibrationnet upgrade", date: "2023-02-21", colors: "bg-slate-800 text-slate-100 hover:text-lime-100 hover:bg-lime-600", c: "bg-lime-600/50" },
-  { milestone: "Mainnet", date: "2023-03-14", colors: "bg-slate-800 text-slate-100 hover:text-green-100 hover:bg-green-600", c: "bg-green-600/50" },
+  { milestone: "Mainnet", date: "2023-03-14T15:14:00", colors: "bg-slate-800 text-slate-100 hover:text-green-100 hover:bg-green-600", c: "bg-green-600/50" },
 ];
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => <span className={styles.timer}>{completed ? "🎉" : `${days}d ${hours}h ${minutes}m ${zeroPad(seconds)}s`}</span>
